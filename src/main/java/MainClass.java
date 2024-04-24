@@ -1,9 +1,10 @@
 import java.util.LinkedList;
 
 public class MainClass {
-    private static LinkedList<Produto> produtos;
-    private static LinkedList<Lote> lotes;
-    private static LinkedList<Encomenda> encomendas;
+    public static LinkedList<Produto> produtos;
+    public static LinkedList<Lote> lotes;
+    public static LinkedList<Encomenda> encomendas;
+
     public static void main(String[] args) {
         Produto produto1 = new Produto("Marca1", 101, "Categoria1", "Produto1", 10.50f, "Fornecedor1", null);
         Produto produto2 = new Produto("Marca2", 102, "Categoria2", "Produto2", 20.75f, "Fornecedor2", null);
