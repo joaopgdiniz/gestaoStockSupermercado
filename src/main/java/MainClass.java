@@ -6,6 +6,10 @@ public class MainClass {
     public static LinkedList<Encomenda> encomendas;
 
     public static void main(String[] args) {
+        produtos = new LinkedList<>();
+        lotes = new LinkedList<>();
+        encomendas = new LinkedList<>();
+
         Produto produto1 = new Produto("Marca1", 101, "Categoria1", "Produto1", 10.50f, "Fornecedor1", null);
         Produto produto2 = new Produto("Marca2", 102, "Categoria2", "Produto2", 20.75f, "Fornecedor2", null);
 
@@ -27,5 +31,7 @@ public class MainClass {
         encomendas.add(encomenda1);
         encomendas.add(encomenda2);
         encomendas.add(encomenda3);
+
+        new menuPrincipal().setVisible(true);
     }
 }
