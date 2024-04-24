@@ -2,6 +2,7 @@ import java.util.Date;
 
 public class Lote {
     private int codLote;
+    private Produto produto;
     private Date validade;
     private int quantidade;
     private Date dataEntrada;
@@ -9,9 +10,10 @@ public class Lote {
     private String estado;
     private Date DeletedAt;
 
-    public Lote(int codLote, Date validade, int quantidade, Date dataEntrada, String localizacao, String estado) {
+    public Lote(int codLote, Date validade, int quantidade, Produto produto, Date dataEntrada, String localizacao, String estado) {
         this.codLote = codLote;
         this.validade = validade;
+        this.produto = produto;
         this.quantidade = quantidade;
         this.dataEntrada = dataEntrada;
         this.localizacao = localizacao;
